@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
+<div class="flex justify-center items-center" style="height: 80vh;">
+    <div class="shadow-md p-10 rounded-md" style="width: 100%; max-width: 400px;">
+        <div class="text-2xl text-center my-3">
+            แก้ไขข้อมูลส่วนตัว
+        </div>
+        <div class="flex justify-center my-3">
+            <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px" fill="#1f1f1f"><path d="M400-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM80-160v-112q0-33 17-62t47-44q51-26 115-44t141-18h14q6 0 12 2-8 18-13.5 37.5T404-360h-4q-71 0-127.5 18T180-306q-9 5-14.5 14t-5.5 20v32h252q6 21 16 41.5t22 38.5H80Zm560 40-12-60q-12-5-22.5-10.5T584-204l-58 18-40-68 46-40q-2-14-2-26t2-26l-46-40 40-68 58 18q11-8 21.5-13.5T628-460l12-60h80l12 60q12 5 22.5 11t21.5 15l58-20 40 70-46 40q2 12 2 25t-2 25l46 40-40 68-58-18q-11 8-21.5 13.5T732-180l-12 60h-80Zm40-120q33 0 56.5-23.5T760-320q0-33-23.5-56.5T680-400q-33 0-56.5 23.5T600-320q0 33 23.5 56.5T680-240ZM400-560q33 0 56.5-23.5T480-640q0-33-23.5-56.5T400-720q-33 0-56.5 23.5T320-640q0 33 23.5 56.5T400-560Zm0-80Zm12 400Z"/></svg>
+        </div>
+        <form method="post">
+            <div class="my-3">
+                <label for="">ชื่อผู้ใช้งาน</label>
+                <input class="w-full my-3 p-2 text-base border border-2 border-solid border-blue-300 outline-none transition-all ease-in-out focus:border-blue-500 rounded-md" formControlName="username" type="text" name="username" id="username" value="" placeholder="ชื่อ - นามสกุล">
+            </div>
+            <div class="my-3">
+                <label for="">อีเมล</label>
+                <input class="w-full my-3 p-2 text-base border border-2 border-solid border-blue-300 outline-none transition-all ease-in-out focus:border-blue-500 rounded-md" formControlName="email" type="email" name="email" id="email" placeholder="อีเมล">
+            </div>
+            <div class="my-3">
+                <label for="">เบอร์โทรศัพท์</label>
+                <input class="w-full my-3 p-2 text-base border border-2 border-solid border-blue-300 outline-none transition-all ease-in-out focus:border-blue-500 rounded-md" formControlName="tell" type="text" name="tell" id="tell" placeholder="เบอร์โทรศัพท์ ">
+            </div>
+            <button class="my-3 w-full bg-blue-400 p-3 rounded-md text-white text-base cursor-pointer transition-all ease-in-out hover:bg-blue-500 rounded-md" type="submit">
+                แก้ไขข้อมูลส่วนตัว
+            </button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<a class="bg-blue-400 transition-all ease-in-out hover:bg-blue-500 text-white text-base rounded-md p-2 m-3 inline-block" href="" routerLink="/">กลับหน้าหลัก</a>
+<div class="flex justify-center items-center h-screen">
+    <div class="shadow-md rounded-md " style="width: 100%; max-width: 400px; padding: 40px">
+        <div class="text-2xl text-center my-3">
+            สมัครสมาชิก
+        </div>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()" method="post">
+            <input class="w-full my-3 p-2 text-base border border-2 border-solid border-blue-300 outline-none transition-all ease-in-out focus:border-blue-500 rounded-md" formControlName="username" type="text" name="username" id="username" placeholder="ชื่อ - นามสกุล">
+            <input class="w-full my-3 p-2 text-base border border-2 border-solid border-blue-300 outline-none transition-all ease-in-out focus:border-blue-500 rounded-md" formControlName="email" type="email" name="email" id="email" placeholder="อีเมล">
+            <input class="w-full my-3 p-2 text-base border border-2 border-solid border-blue-300 outline-none transition-all ease-in-out focus:border-blue-500 rounded-md" formControlName="password" [type]="showPassword ? 'text' : 'password' " name="password" id="password" placeholder="รหัสผ่าน">
+            <span class="text-base text-gray-400 flex gap-2 items-center"><input type="checkbox" (click)="togglePassword()" name="" id=""> แสดงรหัสผ่าน</span>
+            <input class="w-full my-3 p-2 text-base border border-2 border-solid border-blue-300 outline-none transition-all ease-in-out focus:border-blue-500 rounded-md" formControlName="tell" type="text" name="tell" id="tell" placeholder="เบอร์โทรศัพท์">
+            <button class="bg-blue-400 w-full p-3 rounded-md text-white text-base cursor-pointer transition-all ease-in-out hover:bg-blue-500 mt-3" type="submit">
+                สมัครสมาชิก
+            </button>
+            <a class="block text-center mt-3 text-blue-500 text-base transition-all ease-in-out hover:text-blue-600" href="" routerLink="/login">หากมีบัญชีแล้ว คลิก!</a>
+        </form>
+    </div>
+</div>
